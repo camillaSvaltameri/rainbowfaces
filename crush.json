@@ -1,0 +1,16 @@
+{
+  "$schema": "https://charm.land/crush.json",
+  "providers": {
+    "bayleaf": {
+      "type": "openai-compat",
+      "base_url": "https://api.bayleaf.dev/v1",
+      "api_key": "${BAYLEAF_API_KEY:?set BAYLEAF_API_KEY}",
+      "models": [
+        {
+          "id": "openrouter:z-ai/glm-5.1",
+          "name": "GLM 5.1 (BayLeaf)"
+        }
+      ]
+    }
+  }
+}
